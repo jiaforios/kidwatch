@@ -87,9 +87,22 @@ class LoginViewController: HyBaseViewController,UITableViewDelegate,UITableViewD
     
     //MARK:登录事件,然登录界面出栈
     func loginAction() {
-        let location = LocationViewController()
-        self.navigationController?.setViewControllers([], animated: true)
-        self.present(location, animated: true, completion: nil)
+        
+        let params = ["mobile":"18682047063","password":"52d4a83215565368f94d3e340e7125e7"]
+        
+        
+        
+        NetManager.shareManager.request(Type: .Post, url: "https://kidwatch01.hojy.com/hgts/api/acountLogin", parames:params as [String:AnyObject], succeed: { (suc, result) in
+            
+            print(result)
+        }) { (fail) in
+            print(fail!)
+        }
+//        let location = LocationViewController()
+//        self.navigationController?.setViewControllers([], animated: true)
+//        self.present(location, animated: true, completion: nil)
+        
+        
     }
     
     // 跳转到注册界面 并传值
