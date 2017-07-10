@@ -13,12 +13,22 @@ class AccountNetManager: NSObject {
     
     //登录
     class func login(type:ConnectType,acount:String!,password:String!,resultBlock:@escaping(AnyObject)->()) ->(){
-    
-    let loginUrl = ""
+     
+        let params = ["mobile":acount,"password":password]
+        
+        NetManager.shareManager.request(Type: type, url: kAcountLogin, parames: params as [String:AnyObject], succeed: { (suc, response) in
+            resultBlock(response)
+        
+        }) { (fail) in
+            
+            
+        }
+        
         
     }
     
     // 注册
+    
     
     // 忘记密码
     
