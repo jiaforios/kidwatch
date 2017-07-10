@@ -8,24 +8,35 @@
 
 import UIKit
 
-class AccountNetManager: NSObject {
+class AccountNetManager:BaseActionManager{
 
     
     //登录
-    class func login(type:ConnectType,acount:String!,password:String!,resultBlock:@escaping(AnyObject)->()) ->(){
-     
-        let params = ["mobile":acount,"password":password]
+    
+    class func login(judge:Bool,type:ConnectType,acount:String?,password:String?,resultBlock:@escaping(AnyObject)->()) ->(){
         
+        if judge {
+            if !self.judeNull(content: acount){
+              // 验证不通过
+                return
+            }
+            if !self.judeNull(content: password){
+                // 验证不通过
+                return
+            }
+            
+        }
+
+        let params = ["mobile":acount,"password":password]
         NetManager.shareManager.request(Type: type, url: kAcountLogin, parames: params as [String:AnyObject], succeed: { (suc, response) in
             resultBlock(response)
-        
+            
         }) { (fail) in
             
             
         }
-        
-        
     }
+    
     
     // 注册
     

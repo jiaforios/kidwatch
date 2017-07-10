@@ -215,6 +215,7 @@
 		848D9E041F136ADE00F2AD18 /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D9E031F136ADE00F2AD18 /* NetManager.swift */; };
 		848D9E061F1376BE00F2AD18 /* AccountNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D9E051F1376BE00F2AD18 /* AccountNetManager.swift */; };
 		848D9E081F137B8500F2AD18 /* NetMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D9E071F137B8500F2AD18 /* NetMacros.swift */; };
+		848D9E0A1F13968000F2AD18 /* BaseActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D9E091F13968000F2AD18 /* BaseActionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -520,6 +521,7 @@
 		848D9E031F136ADE00F2AD18 /* NetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetManager.swift; sourceTree = "<group>"; };
 		848D9E051F1376BE00F2AD18 /* AccountNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountNetManager.swift; sourceTree = "<group>"; };
 		848D9E071F137B8500F2AD18 /* NetMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetMacros.swift; sourceTree = "<group>"; };
+		848D9E091F13968000F2AD18 /* BaseActionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseActionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -578,6 +580,7 @@
 				848D9E071F137B8500F2AD18 /* NetMacros.swift */,
 				848D9E031F136ADE00F2AD18 /* NetManager.swift */,
 				848D9E051F1376BE00F2AD18 /* AccountNetManager.swift */,
+				848D9E091F13968000F2AD18 /* BaseActionManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1273,6 +1276,7 @@
 				844145091EFE4C6600710E91 /* HyBaseNavgationController.swift in Sources */,
 				848D9D3D1F13644C00F2AD18 /* ConstraintDescription.swift in Sources */,
 				848D9D491F13644C00F2AD18 /* ConstraintMakerExtendable.swift in Sources */,
+				848D9E0A1F13968000F2AD18 /* BaseActionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -88,9 +88,10 @@ class LoginViewController: HyBaseViewController,UITableViewDelegate,UITableViewD
     //MARK:登录事件,然登录界面出栈
     func loginAction() {
         
-        AccountNetManager.login(type: .Post, acount: "18682047063", password: "52d4a83215565368f94d3e340e7125e7") { (res) in
+        AccountNetManager.login(judge:true,type: .Post, acount: "18682047063", password: "52d4a83215565368f94d3e340e7125e7") { (res) in
             
             print(res)
+            
         }
         
 //        let location = LocationViewController()
