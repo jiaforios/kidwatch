@@ -77,9 +77,9 @@ class LoginViewController: HyBaseViewController {
             
         }
         
-//        let location = LocationViewController()
-//        self.navigationController?.setViewControllers([], animated: true)
-//        self.present(location, animated: true, completion: nil)
+        let location = LocationViewController()
+        self.navigationController?.setViewControllers([], animated: true)
+        self.present(location, animated: true, completion: nil)
     
     }
     

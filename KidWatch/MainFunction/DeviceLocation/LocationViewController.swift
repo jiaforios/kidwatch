@@ -14,11 +14,15 @@ class LocationViewController: HyBaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         self.title = "主页"
         self.view.backgroundColor = UIColor.red
+        let mapVC = GaoMapViewController()
         
+        self.view .addSubview(mapVC.view)
+        
+        self.addChildViewController(mapVC)
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -26,7 +30,6 @@ class LocationViewController: HyBaseViewController {
     }
     
      deinit{
-        
         Logger("销毁")
     }
     

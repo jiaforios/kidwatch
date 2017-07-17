@@ -21,7 +21,5 @@ class BaseActionManager: NSObject {
     }
     
 // 合法性判断
-    
-    
-    
+
 }

@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame:UIScreen.main.bounds)
+        
+        self.GaodeMap()
+        
         let loginVC = LoginViewController()
         let loginNav = HyBaseNavgationController.init(rootViewController: loginVC)
         window?.rootViewController = loginNav
@@ -25,6 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     
         return true
+    }
+    //MARK: 高德地图
+    func GaodeMap() {
+       AMapServices.shared().apiKey = GaodeMapKey
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

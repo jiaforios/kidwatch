@@ -9,7 +9,6 @@
 import UIKit
 
 let kHost = "https://kidwatch01.hojy.com"
-
 // 发送验证码
 let kSendCheckCode = kHost.appending("/hgts/api/sendCheckCode")
 // 注册账户
@@ -91,3 +90,6 @@ let kInsertOrUpdateOpinions = kHost.appending("/hgts/api/insertOrUpdateOpinions"
 let kUpdateDevicePowerState = kHost.appending("/hgts/api/updateDevicePowerState")
 
 
+
+//MARK:  第三方sdk
+let GaodeMapKey = "09d724217d24989262ee022fd5d54310"
