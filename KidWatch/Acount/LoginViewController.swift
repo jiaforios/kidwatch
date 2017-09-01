@@ -28,10 +28,7 @@ class LoginViewController: HyBaseViewController {
         datasource.append("@2x_82")
         placehoderArr.append(NSLocalizedString("login_userPlaceholder", comment: "手机号输入提示"))
         placehoderArr.append(NSLocalizedString("login_pwdPlaceholder", comment: "密码输入提示"))
-
     }
-    
-    
     
     // 设置登录，注册，忘记密码按钮
     func toMakeBtns() {
@@ -72,9 +69,8 @@ class LoginViewController: HyBaseViewController {
     func loginAction() {
         
         AccountNetManager.login(judge:true,type: .Post, acount: "18682047063", password: "52d4a83215565368f94d3e340e7125e7") { (res) in
-            
+
             print(res)
-            
         }
         
         let location = LocationViewController()
@@ -82,7 +78,6 @@ class LoginViewController: HyBaseViewController {
         self.present(location, animated: true, completion: nil)
     
     }
-    
     // 跳转到注册界面 并传值
     func registerAction() {
         let register = RegisterViewController()
@@ -90,8 +85,6 @@ class LoginViewController: HyBaseViewController {
         register.acountName = acountCell.textField?.text
         self.navigationController?.pushViewController(register, animated: true)
     }
-    
-    
     
     // TODO:今天写到这，明天继续
 
@@ -104,7 +97,52 @@ class LoginViewController: HyBaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
 
+extension LoginViewController:UITableViewDelegate,UITableViewDataSource{
+    
+    //设置tabview
+    func toMakeTabview() {
+        tabView = UITableView.init(frame: CGRect.zero, style: .plain)
+        
+        tabView?.tableFooterView = UIView()
+        tabView?.delegate = self
+        tabView?.dataSource = self
+        
+        tabView?.register(TextInputCell.self, forCellReuseIdentifier: "cell")
+        
+        self.view.addSubview(tabView!)
+        
+        tabView?.snp.makeConstraints({ (make) in
+            make.width.equalTo(kScreenW)
+            make.height.equalTo(88)
+            make.top.equalTo(33+kBarNav)
+            make.left.equalTo(0)
+        })
+        
+        
+    }
+    
+    //MARK:tabview 的代理方法
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TextInputCell
+        
+        
+        cell.configerData(datasource[indexPath.row], placehoderArr[indexPath.row])
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! TextInputCell
+        cell.textField?.becomeFirstResponder()
+    }
 }
 
 

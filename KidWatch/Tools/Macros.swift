@@ -67,8 +67,6 @@ let kSepratorColor = RGBColor(219,g:222,b:230)
 let kVCTitleColor = HexColor(hex:"2b2828")
 
 
-
-
 //MARK: IOS 8以上
 func IS_IOS8() -> Bool { return (UIDevice.current.systemVersion as NSString).doubleValue >= 8.0 }
 

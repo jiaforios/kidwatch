@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		386C9A3C1F1CFBD900B38104 /* GaoMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C9A3B1F1CFBD900B38104 /* GaoMapViewController.swift */; };
 		386C9A491F1D02C800B38104 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C9A461F1D02C800B38104 /* AMapFoundationKit.framework */; };
-		386C9A4A1F1D02C800B38104 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C9A471F1D02C800B38104 /* AMapSearchKit.framework */; };
 		386C9A4B1F1D02C800B38104 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C9A481F1D02C800B38104 /* MAMapKit.framework */; };
 		386C9A4D1F1D032300B38104 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 386C9A4C1F1D032300B38104 /* AMap.bundle */; };
 		386C9A501F1D035100B38104 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C9A4F1F1D035100B38104 /* libc++.tbd */; };
@@ -20,8 +19,6 @@
 		386C9A5A1F1D037E00B38104 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C9A591F1D037E00B38104 /* SystemConfiguration.framework */; };
 		386C9A5C1F1D038800B38104 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C9A5B1F1D038800B38104 /* CoreLocation.framework */; };
 		386C9A5E1F1D039100B38104 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C9A5D1F1D039100B38104 /* CoreTelephony.framework */; };
-		386C9A5F1F1D04CE00B38104 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848D9D5E1F13644C00F2AD18 /* SnapKit.framework */; };
-		386C9A601F1D04CE00B38104 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 848D9D5E1F13644C00F2AD18 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		386C9A6C1F1D097D00B38104 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C9A6B1F1D097D00B38104 /* UIKit.framework */; };
 		386C9A6E1F1D0A1D00B38104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C9A6D1F1D0A1D00B38104 /* Foundation.framework */; };
 		386C9A701F1D0A3600B38104 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C9A6F1F1D0A3600B38104 /* libstdc++.6.0.9.tbd */; };
@@ -199,6 +196,10 @@
 		8454B01F1EFE2D0A00D9EBB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8454B01D1EFE2D0A00D9EBB5 /* Main.storyboard */; };
 		8454B0211EFE2D0A00D9EBB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8454B0201EFE2D0A00D9EBB5 /* Assets.xcassets */; };
 		8454B0241EFE2D0A00D9EBB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8454B0221EFE2D0A00D9EBB5 /* LaunchScreen.storyboard */; };
+		846E588D1F1E0073007516C8 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386C9A471F1D02C800B38104 /* AMapSearchKit.framework */; };
+		846E58991F1E0103007516C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E58981F1E0103007516C8 /* ViewController.m */; };
+		846E589A1F1E0224007516C8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848D9D5E1F13644C00F2AD18 /* SnapKit.framework */; };
+		846E589B1F1E0224007516C8 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 848D9D5E1F13644C00F2AD18 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		848D9D391F13644C00F2AD18 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D9D161F13644C00F2AD18 /* Constraint.swift */; };
 		848D9D3A1F13644C00F2AD18 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D9D171F13644C00F2AD18 /* ConstraintAttributes.swift */; };
 		848D9D3B1F13644C00F2AD18 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D9D181F13644C00F2AD18 /* ConstraintConfig.swift */; };
@@ -289,19 +290,19 @@
 			remoteGlobalIDString = 385C80441F13BC8A002B61B7;
 			remoteInfo = "Alamofire watchOS";
 		};
-		386C9A611F1D04CE00B38104 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 848D9D121F13644C00F2AD18 /* SnapKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
-			remoteInfo = SnapKit;
-		};
 		386CDF881F13BE84004B1CFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 385C803B1F13BC8A002B61B7 /* Alamofire.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
+		};
+		846E589C1F1E0224007516C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848D9D121F13644C00F2AD18 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = SnapKit;
 		};
 		848D9D5D1F13644C00F2AD18 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -327,7 +328,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				386CDF871F13BE84004B1CFD /* Alamofire.framework in Embed Frameworks */,
-				386C9A601F1D04CE00B38104 /* SnapKit.framework in Embed Frameworks */,
+				846E589B1F1E0224007516C8 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +350,7 @@
 		386C9A591F1D037E00B38104 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		386C9A5B1F1D038800B38104 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		386C9A5D1F1D039100B38104 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		386C9A641F1D064000B38104 /* KidWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KidWatch-Bridging-Header.h"; sourceTree = "<group>"; };
+		386C9A641F1D064000B38104 /* KidWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "KidWatch-Bridging-Header.h"; path = "ThirdParty/GaodeMap/KidWatch-Bridging-Header.h"; sourceTree = "<group>"; };
 		386C9A6B1F1D097D00B38104 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		386C9A6D1F1D0A1D00B38104 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		386C9A6F1F1D0A3600B38104 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
@@ -531,6 +532,8 @@
 		8454B0201EFE2D0A00D9EBB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8454B0231EFE2D0A00D9EBB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8454B0251EFE2D0A00D9EBB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846E58971F1E0103007516C8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		846E58981F1E0103007516C8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		848D9D121F13644C00F2AD18 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SnapKit.xcodeproj; sourceTree = "<group>"; };
 		848D9D161F13644C00F2AD18 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
 		848D9D171F13644C00F2AD18 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
@@ -578,6 +581,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846E588D1F1E0073007516C8 /* AMapSearchKit.framework in Frameworks */,
 				386C9A721F1D0A8B00B38104 /* GLKit.framework in Frameworks */,
 				386C9A701F1D0A3600B38104 /* libstdc++.6.0.9.tbd in Frameworks */,
 				386C9A6E1F1D0A1D00B38104 /* Foundation.framework in Frameworks */,
@@ -585,13 +589,12 @@
 				386C9A5E1F1D039100B38104 /* CoreTelephony.framework in Frameworks */,
 				386C9A5C1F1D038800B38104 /* CoreLocation.framework in Frameworks */,
 				386C9A5A1F1D037E00B38104 /* SystemConfiguration.framework in Frameworks */,
+				846E589A1F1E0224007516C8 /* SnapKit.framework in Frameworks */,
 				386C9A581F1D037900B38104 /* JavaScriptCore.framework in Frameworks */,
 				386C9A561F1D037400B38104 /* Security.framework in Frameworks */,
-				386C9A5F1F1D04CE00B38104 /* SnapKit.framework in Frameworks */,
 				386C9A541F1D036600B38104 /* libstdc++.tbd in Frameworks */,
 				386C9A521F1D035C00B38104 /* libz.tbd in Frameworks */,
 				386C9A501F1D035100B38104 /* libc++.tbd in Frameworks */,
-				386C9A4A1F1D02C800B38104 /* AMapSearchKit.framework in Frameworks */,
 				386C9A491F1D02C800B38104 /* AMapFoundationKit.framework in Frameworks */,
 				386CDF861F13BE84004B1CFD /* Alamofire.framework in Frameworks */,
 				386C9A4B1F1D02C800B38104 /* MAMapKit.framework in Frameworks */,
@@ -622,7 +625,6 @@
 				386C9A461F1D02C800B38104 /* AMapFoundationKit.framework */,
 				386C9A471F1D02C800B38104 /* AMapSearchKit.framework */,
 				386C9A481F1D02C800B38104 /* MAMapKit.framework */,
-				386C9A641F1D064000B38104 /* KidWatch-Bridging-Header.h */,
 			);
 			path = GaodeMap;
 			sourceTree = "<group>";
@@ -928,6 +930,9 @@
 		8454B0181EFE2D0A00D9EBB5 /* KidWatch */ = {
 			isa = PBXGroup;
 			children = (
+				386C9A641F1D064000B38104 /* KidWatch-Bridging-Header.h */,
+				846E58971F1E0103007516C8 /* ViewController.h */,
+				846E58981F1E0103007516C8 /* ViewController.m */,
 				848D9D101F13644C00F2AD18 /* ThirdParty */,
 				844146491EFE60C600710E91 /* MainFunction */,
 				8441450E1EFE4F5000710E91 /* Image */,
@@ -944,9 +949,17 @@
 			path = KidWatch;
 			sourceTree = "<group>";
 		};
+		846E588E1F1E00BA007516C8 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		848D9D101F13644C00F2AD18 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				846E588E1F1E00BA007516C8 /* CustomViews */,
 				386C9A451F1D02C800B38104 /* GaodeMap */,
 				385C803B1F13BC8A002B61B7 /* Alamofire.xcodeproj */,
 				848D9D111F13644C00F2AD18 /* Snap */,
@@ -1030,7 +1043,7 @@
 			);
 			dependencies = (
 				386CDF891F13BE84004B1CFD /* PBXTargetDependency */,
-				386C9A621F1D04CE00B38104 /* PBXTargetDependency */,
+				846E589D1F1E0224007516C8 /* PBXTargetDependency */,
 			);
 			name = KidWatch;
 			productName = KidWatch;
@@ -1049,8 +1062,7 @@
 				TargetAttributes = {
 					8454B0151EFE2D0A00D9EBB5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 75V6ZM52RS;
-						LastSwiftMigration = 0820;
+						DevelopmentTeam = CKXF9F3R3Y;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -1332,6 +1344,7 @@
 				848D9D511F13644C00F2AD18 /* ConstraintRelatableTarget.swift in Sources */,
 				386CDF8C1F13C50C004B1CFD /* loginVC+extend.swift in Sources */,
 				848D9E061F1376BE00F2AD18 /* AccountNetManager.swift in Sources */,
+				846E58991F1E0103007516C8 /* ViewController.m in Sources */,
 				848D9D531F13644C00F2AD18 /* ConstraintView+Extensions.swift in Sources */,
 				848D9D421F13644C00F2AD18 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				844145081EFE4C6600710E91 /* AppDelegate.swift in Sources */,
@@ -1382,15 +1395,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		386C9A621F1D04CE00B38104 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnapKit;
-			targetProxy = 386C9A611F1D04CE00B38104 /* PBXContainerItemProxy */;
-		};
 		386CDF891F13BE84004B1CFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
 			targetProxy = 386CDF881F13BE84004B1CFD /* PBXContainerItemProxy */;
+		};
+		846E589D1F1E0224007516C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			targetProxy = 846E589C1F1E0224007516C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1524,21 +1537,20 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 75V6ZM52RS;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wenjun Yan (4Z9T5ZLWJT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wenjun Yan (4Z9T5ZLWJT)";
+				DEVELOPMENT_TEAM = CKXF9F3R3Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KidWatch/ThirdParty/GaodeMap",
 				);
-				INFOPLIST_FILE = KidWatch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = "$(SRCROOT)/KidWatch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.huayu.KidWatch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2bd1f526-bc66-4cfa-a71b-fb644443cac1";
-				PROVISIONING_PROFILE_SPECIFIER = Special_Dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hujy.com;
+				PRODUCT_NAME = KidWatch;
+				PROVISIONING_PROFILE = "66b0ea7b-2271-440e-ad2b-9c97cce88310";
+				PROVISIONING_PROFILE_SPECIFIER = customDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "KidWatch/ThirdParty/GaodeMap/KidWatch-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1549,16 +1561,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wenjun Yan (4Z9T5ZLWJT)";
+				DEVELOPMENT_TEAM = CKXF9F3R3Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KidWatch/ThirdParty/GaodeMap",
 				);
-				INFOPLIST_FILE = KidWatch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/KidWatch/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.huayu.KidWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hujy.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KidWatch/ThirdParty/GaodeMap/KidWatch-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
