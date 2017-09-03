@@ -70,13 +70,15 @@ class LoginViewController: HyBaseViewController {
         
         AccountNetManager.login(judge:true,type: .Post, acount: "18682047063", password: "52d4a83215565368f94d3e340e7125e7") { (res) in
 
-            print(res)
         }
         
         let location = LocationViewController()
         self.navigationController?.setViewControllers([], animated: true)
-        self.present(location, animated: true, completion: nil)
-    
+//        self.present(location, animated: true, completion: nil)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = location
+        
     }
     // 跳转到注册界面 并传值
     func registerAction() {
