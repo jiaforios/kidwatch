@@ -20,6 +20,7 @@ class LoginVC: HyBaseViewController {
     @IBAction func LoinAction(_ sender: Any) {
         
         print("登录")
+        
     }
     
     //MARK:-忘记密码
